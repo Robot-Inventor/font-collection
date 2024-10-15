@@ -1,0 +1,36 @@
+name: Update userscripts
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    update-readme:
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version: [22.x]
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v4
+              with:
+                  node-version: ${{ matrix.node-version }}
+
+            - run: npm ci
+
+            - run: npm run generate
+
+            - uses: peter-evans/create-pull-request@v7
+              with:
+                  commit-message: "ci: update `README.md`"
+                  delete-branch: true
+                  title: "ci: update `README.md`"
+                  base: main
+                  body: |
+                      This PR was automatically generated to update the `README.md`. It contains the latest changes from the main branch.
+                  branch: auto-update-readme-md
+                  reviewers: Robot-Inventor
