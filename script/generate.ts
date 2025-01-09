@@ -91,6 +91,15 @@ const fontCollection = [
         supportVariableFont: true,
         license: "OFL1.1",
         website: "https://www.theleagueofmoveabletype.com/league-mono"
+    },
+    {
+        name: "Mona Sans",
+        type: "sans-serif",
+        supportedLanguages: ["en"],
+        mainUse: ["design"],
+        supportVariableFont: true,
+        license: "OFL1.1",
+        website: "https://github.com/mona-sans"
     }
 ] as const satisfies FontInfo[];
 
