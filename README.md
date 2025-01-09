@@ -33,6 +33,15 @@
 - 📜ライセンス：[SIL Open Font License 1.1](https://openfontlicense.org/open-font-license-official-text/)
 - 🌐公式サイト：[リンク](https://www.theleagueofmoveabletype.com/league-spartan)
 
+### Mona Sans
+
+- 🖋️種類：`sans-serif`
+- 💬対応言語：英語
+- 💡主な用途：デザイン
+- ⚙️可変フォント：対応
+- 📜ライセンス：[SIL Open Font License 1.1](https://openfontlicense.org/open-font-license-official-text/)
+- 🌐公式サイト：[リンク](https://github.com/mona-sans)
+
 ### Monaspace
 
 - 🖋️種類：`monospace`
