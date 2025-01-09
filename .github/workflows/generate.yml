@@ -1,4 +1,4 @@
-name: Update userscripts
+name: Update README
 
 on:
     push:
