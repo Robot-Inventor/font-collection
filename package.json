@@ -5,7 +5,7 @@
   "main": "script/generate.ts",
   "type": "module",
   "scripts": {
-    "generate": "npx tsx ./script/generate.ts",
+    "generate": "node ./script/generate.ts",
     "format": "npx prettier --write ./script/**",
     "format:check": "npx prettier --check ./script/**"
   },
@@ -21,8 +21,8 @@
   "homepage": "https://github.com/Robot-Inventor/font-collection#readme",
   "devDependencies": {
     "@robot-inventor/tsconfig-base": "^6.0.0",
+    "@types/node": "^22.14.1",
     "prettier": "^3.3.3",
-    "tsx": "^4.19.1",
     "typescript": "^5.6.3"
   }
 }
