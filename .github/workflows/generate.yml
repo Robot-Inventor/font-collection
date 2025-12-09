@@ -24,7 +24,7 @@ jobs:
 
             - run: npm run generate
 
-            - uses: peter-evans/create-pull-request@v7
+            - uses: peter-evans/create-pull-request@v8
               with:
                   commit-message: "ci: update `README.md`"
                   delete-branch: true
