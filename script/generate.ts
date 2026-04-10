@@ -6,7 +6,7 @@ interface FontInfo {
     supportedLanguages: Array<keyof typeof LANGUAGE_TABLE>;
     mainUse: Array<keyof typeof USE_TABLE>;
     supportVariableFont: boolean;
-    license: keyof typeof LICENSE_TABLE;
+    license: keyof typeof LICENSE_TABLE | { name: "Proprietary"; url: string };
     website: `https://${string}`;
 }
 
@@ -100,6 +100,27 @@ const fontCollection = [
         supportVariableFont: true,
         license: "OFL1.1",
         website: "https://github.com/mona-sans"
+    },
+    {
+        name: "カッティングエッジ",
+        type: "sans-serif",
+        supportedLanguages: ["ja"],
+        mainUse: ["design"],
+        supportVariableFont: false,
+        license: {
+            name: "Proprietary",
+            url: "https://flopdesign.booth.pm/items/7152721"
+        },
+        website: "https://flopdesign.booth.pm/items/7152721"
+    },
+    {
+        name: "Google Sans",
+        type: "sans-serif",
+        supportedLanguages: ["en"],
+        mainUse: ["document", "design"],
+        supportVariableFont: true,
+        license: "OFL1.1",
+        website: "https://fonts.google.com/specimen/Google+Sans"
     }
 ] as const satisfies FontInfo[];
 
@@ -119,7 +140,7 @@ const fontCollectionText = fontCollection
             .sort()
             .join(", ")}
 - ⚙️可変フォント：${font.supportVariableFont ? "対応" : "非対応"}
-- 📜ライセンス：[${LICENSE_TABLE[font.license].name}](${LICENSE_TABLE[font.license].url})
+- 📜ライセンス：[${typeof font.license === "string" ? LICENSE_TABLE[font.license].name : font.license.name}](${typeof font.license === "string" ? LICENSE_TABLE[font.license].url : font.license.url})
 - 🌐公式サイト：[リンク](${font.website})
     `.trim();
     });

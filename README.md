@@ -6,6 +6,15 @@
 
 ## 📚フォント一覧
 
+### Google Sans
+
+- 🖋️種類：`sans-serif`
+- 💬対応言語：英語
+- 💡主な用途：デザイン, 文書
+- ⚙️可変フォント：対応
+- 📜ライセンス：[SIL Open Font License 1.1](https://openfontlicense.org/open-font-license-official-text/)
+- 🌐公式サイト：[リンク](https://fonts.google.com/specimen/Google+Sans)
+
 ### JetBrains Mono
 
 - 🖋️種類：`monospace`
@@ -77,6 +86,15 @@
 - ⚙️可変フォント：対応
 - 📜ライセンス：[SIL Open Font License 1.1](https://openfontlicense.org/open-font-license-official-text/)
 - 🌐公式サイト：[リンク](https://fonts.google.com/noto/specimen/Noto+Sans+JP)
+
+### カッティングエッジ
+
+- 🖋️種類：`sans-serif`
+- 💬対応言語：日本語
+- 💡主な用途：デザイン
+- ⚙️可変フォント：非対応
+- 📜ライセンス：[Proprietary](https://flopdesign.booth.pm/items/7152721)
+- 🌐公式サイト：[リンク](https://flopdesign.booth.pm/items/7152721)
 
 ## 💻開発
 
